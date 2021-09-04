@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Lucky Numbers @ SixtySix Games</title>
+        <meta name="description" content="Generate your own lucky numbers.">
+        <meta name="keywords" content="Lucky Numbers">
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <script type="text/javascript" src="/script.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="header_logo">
+            <a href="/"><img src="/66GLogox100.png" class="imagelink" width="100" height="100" alt="SixtySix Games"></a>
+        </div>
+        <div class="mainbody">
+            <div class="content">
+                <h1>Lucky Numbers</h1>
+<p>
+    Simply enter your birthdate and click the generate button for your Lucky Lottery Numbers.
+</p>
+
+<div style="text-align: center;">
+
+    <form name="birthday" id="birthday">
+        <script type="text/javascript">
+            <!--
+            var i;
+            var output =	"";
+
+            output += 'Day: <select name="bday" id="bday">';
+            for (i=1;i<=31;i++){
+                output += '<option value="' + i + '">' + i + '</option>';
+            }
+            output += '</select> &nbsp;';
+
+            output += 'Month: <select name="bmon" id="bmon">';
+            for (i=1;i<=12;i++){
+                output += '<option value="' + i + '">' + i + '</option>';
+            }
+            output += '</select> &nbsp;';
+
+            output += 'Year: <select name="bcent" id="bcent">';
+            for (i=19;i<=20;i++){
+                output += '<option value="' + i + '">' + i + '</option>';
+            }
+            output += '</select>';
+
+            output += '<select name="bdec" id="bdec">';
+            for (i=0;i<=9;i++){
+                output += '<option value="' + i + '">' + i + '</option>';
+            }
+            output += '</select>';
+
+            output +=  '<select name="byear" id="byear">';
+            for (i=0;i<=9;i++){
+                output +=  '<option value="' + i + '">' + i + '</option>';
+            }
+            output = output + '</select>';
+
+            document.write(output);
+
+            // -->
+        </script>
+        <br><br><input type="button" value="Show me" onclick="generate();">
+    </form>
+</div>
+
+            </div> <!-- end of content -->
+            <div class="footer">
+                <br />&nbsp;
+                <p>
+                    <small>Copyright &copy; SixtySix Games</small>
+                </p>
+            </div>
+        </div> <!-- end of content -->
+    </body>
+</html>
