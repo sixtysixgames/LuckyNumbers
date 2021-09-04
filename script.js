@@ -74,10 +74,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         var vMon = document.birthday.bmon.value * 1;
         var vYear = (document.birthday.bcent.value * 100) + (document.birthday.bdec.value * 10) + (document.birthday.byear.value * 1);
 
-        _numbers = window.open("lottery-numbers.htm", "Numbers", "width=500,height=450,resizable,scrollbars");
+        //_numbers = window.open("lottery-numbers.htm", "Numbers", "width=500,height=450,resizable,scrollbars");
         //_numbers.document.open("text/html");
-        output += "<html><head><title>Lucky Lottery Numbers</title></head><body>";
-
+        //output += "<html><head><title>Lucky Lottery Numbers</title></head><body>";
+        
+        _numbers = document.getElementById("output");
         // eg 17/11/62
         lnumbers[lnumbers.length] = vDay; // 17
         lnumbers[lnumbers.length] = getDayOfYear(vDay, vMon, vYear);
@@ -223,8 +224,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             }
         }
         output += "<br />And here are your luckiest days of the month. " + aMonths[nowMon] + "<br />" + snumbers + "<p>NB: Days in <b>bold</b> indicate a Wednesday or a Saturday, so get your lottery tickets.</p>";
-        output += "</body></html>";
-        _numbers.document.write(output);
-        _numbers.document.close();
+        //output += "</body></html>";
+        //_numbers.document.write(output);
+        //_numbers.document.close();
+        _numbers.innerHTML = output;
     }
 
